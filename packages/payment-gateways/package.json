@@ -22,8 +22,8 @@
 	"module": "build-module/index.js",
 	"dependencies": {
 		"@babel/runtime": "^7.9.2",
-		"@quillforms/config": "file:../config",
-		"@quillforms/types": "file:../types",
+		"@quillforms/config": "^3.0.17",
+		"@quillforms/types": "^3.0.16",
 		"@wordpress/hooks": "^3.32.0",
 		"react-dnd": "15.1.2"
 	},
@@ -34,5 +34,5 @@
 	"publishConfig": {
 		"access": "public"
 	},
-	"gitHead": "e2f333fc81da3009a1f5556e67cec7051a6e706c"
+	"gitHead": "e5ec9820ee54b1a3c8da522046a33079b385391a"
 }

@@ -1,8 +1,4 @@
 /**
- * Quill Forms Dependencies
- */
-import configApi from '@quillforms/config';
-/**
  * WordPress Dependencies
  */
 import { applyFilters } from '@wordpress/hooks';
@@ -30,16 +26,11 @@ export const registerPaymentGatewayModule = (
 	slug: string,
 	module: PaymentGatewayModule
 ) => {
-
-	const isWPEnv = configApi.isWPEnv();
-
-	if(isWPEnv || (!isWPEnv && !['free', 'basic-yearly', 'basic-monthly'].includes(window?.quillformsSaasManagerAdmin?.plan?.plan))) {
-		module = applyFilters(
-			'QuillForms.PaymentGateways.PaymentGatewayModule',
-			module,
-			slug
-		) as PaymentGatewayModule;
-	}
+	module = applyFilters(
+		'QuillForms.PaymentGateways.PaymentGatewayModule',
+		module,
+		slug
+	) as PaymentGatewayModule;
 
 	if ( paymentGatewayModules[ slug ] ) {
 		console.error(

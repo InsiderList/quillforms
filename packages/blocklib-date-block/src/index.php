@@ -176,11 +176,7 @@ class Date_Block_Type extends Block_Type {
 			case 'raw':
 				return $value;
 			default:
-				$date_format = \DateTime::createFromFormat( 'Y-m-d', $value );
-                if (!$date_format) {
-					return $value;
-				}
-                return $date_format->format( $this->get_date_format() );
+				return \DateTime::createFromFormat( 'Y-m-d', $value )->format( $this->get_date_format() );
 		}
 	}
 

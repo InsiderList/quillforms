@@ -22,7 +22,6 @@ export type LogicCondition = {
 			value: string;
 		},
 		{
-			type?: 'numeric' | 'field' | 'variable'; 
 			value: string;
 		}
 	];
@@ -36,8 +35,7 @@ export type EditorLogicCondition = {
 			value?: string;
 		},
 		{
-			value?: 'input' | 'field' | 'variable';
-			type?: string;
+			value?: string;
 		}
 	];
 	op?: LogicConditionOperator;

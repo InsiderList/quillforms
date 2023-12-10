@@ -43,7 +43,6 @@
 		"lodash": "^4.17.21",
 		"react-beautiful-dnd": "^13.1.0",
 		"react-loader-spinner": "^5.1.7-beta.1",
-		"react-select": "^5.8.0",
 		"react-window": "^1.8.6",
 		"slate": "^0.94.1",
 		"slate-history": "0.86.0",
@@ -59,5 +58,5 @@
 	"publishConfig": {
 		"access": "public"
 	},
-	"gitHead": "e2f333fc81da3009a1f5556e67cec7051a6e706c"
+	"gitHead": "e5ec9820ee54b1a3c8da522046a33079b385391a"
 }

@@ -26,10 +26,10 @@
 	},
 	"dependencies": {
 		"@babel/runtime": "^7.16.0",
-		"@quillforms/blocks": "file:../blocks",
-		"@quillforms/config": "file:../config",
-		"@quillforms/payment-gateways": "file:../payment-gateways",
-		"@quillforms/utils": "file:../utils",
+		"@quillforms/blocks": "^4.1.3",
+		"@quillforms/config": "^3.0.17",
+		"@quillforms/payment-gateways": "^3.0.20",
+		"@quillforms/utils": "^3.0.20",
 		"@wordpress/autop": "^3.32.0",
 		"@wordpress/data": "^9.2.0",
 		"@wordpress/element": "^5.9.0",
@@ -53,5 +53,5 @@
 	"publishConfig": {
 		"access": "public"
 	},
-	"gitHead": "e2f333fc81da3009a1f5556e67cec7051a6e706c"
+	"gitHead": "a57c8c3d859baf09c282b208f418c4d3a02cd2bc"
 }

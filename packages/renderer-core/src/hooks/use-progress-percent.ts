@@ -1,16 +1,16 @@
 /**
  * WordPress Dependencies
  */
-import { useSelect } from '@wordpress/data';
-import useFlattenedBlocks from './use-flattened-blocks';
-import { FormBlocks } from '@quillforms/types/src';
+import { useSelect } from "@wordpress/data";
+import useFlattenedBlocks from "./use-flattened-blocks";
+import { FormBlocks } from "@quillforms/types/src";
 
 const useProgressPerecent = () => {
     const { answers, walkPath, blockTypes } = useSelect((select) => {
         return {
-            walkPath: select('quillForms/renderer-core').getWalkPath(),
-            answers: select('quillForms/renderer-core').getAnswers(),
-            blockTypes: select('quillForms/blocks').getBlockTypes(),
+            walkPath: select("quillForms/renderer-core").getWalkPath(),
+            answers: select("quillForms/renderer-core").getAnswers(),
+            blockTypes: select("quillForms/blocks").getBlockTypes(),
         };
     });
     const allBlocks: FormBlocks = useFlattenedBlocks(walkPath);
@@ -19,8 +19,11 @@ const useProgressPerecent = () => {
     allBlocks.forEach((field) => {
         totalBlocksLength++;
         // If the block is editable and answered, or if it's a statement block, count it as answered
-        if ((blockTypes[field?.name]?.supports.editable && answers[field?.id]?.value) ||
-            field?.name === 'statement') { // Assuming 'statement' is the name for statement blocks
+        if (
+            (blockTypes[field?.name]?.supports.editable && answers[field?.id]?.value) ||
+            field?.name === "statement"
+        ) {
+            // Assuming 'statement' is the name for statement blocks
             answered++;
         }
     });

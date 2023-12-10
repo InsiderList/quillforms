@@ -31,7 +31,6 @@ import {
 	SignatureIcon,
 	ThankYouIcon,
 	CalendarPickerIcon,
-	InputMaskIcon,
 } from './pro-blocks-icons';
 import ProLabel from '../pro-label';
 import { Button } from '../button';
@@ -106,12 +105,6 @@ const BlockTypesList: React.FC<Props> = ({ destinationIndex, parent }) => {
 			color: '#fff',
 			icon: <CaledlyIcon />,
 		},
-		"input-mask": {
-			title: 'Input Mask',
-			color: "#be9b7b",
-			icon: <InputMaskIcon />
-
-		}
 	};
 	return (
 		<div className="admin-components-block-types-list">
